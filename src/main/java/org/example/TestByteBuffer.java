@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 
 import static org.example.ByteBufferUtil.debugAll;
 
@@ -34,8 +33,13 @@ public class TestByteBuffer {
 
         ByteBuffer bbf1 = StandardCharsets.UTF_8.encode("hello");
         debugAll(bbf1);
-        String str="hello";
+        String str = "hello";
         ByteBuffer bbf2 = ByteBuffer.wrap(str.getBytes());
         debugAll(bbf2);
+
+        var stackTraceArr = Thread.currentThread().getStackTrace();
+        var currentMethodName = stackTraceArr[stackTraceArr.length - 1].getClassName() + "." + stackTraceArr[stackTraceArr.length - 1].getMethodName();
+        // 获取当前方法名称
+        System.out.println("Thread.currentThread().getStackTrace() = " + currentMethodName);
     }
 }
