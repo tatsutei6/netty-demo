@@ -1,4 +1,4 @@
-package org.example;
+package org.tei.example;
 
 /**
  * Hello world!

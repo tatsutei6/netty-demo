@@ -1,4 +1,4 @@
-package org.example;
+package org.tei.example;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 
-import static org.example.ByteBufferUtil.debugAll;
+import static org.tei.example.ByteBufferUtil.debugAll;
 
 public class TestByteBuffer {
     public static void main(String[] args) {

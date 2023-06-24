@@ -1,4 +1,4 @@
-package org.example;
+package org.tei.async.study;
 
 import java.util.StringJoiner;
 

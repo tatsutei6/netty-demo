@@ -1,4 +1,4 @@
-package org.example;
+package org.tei.example;
 
 import io.netty.util.internal.StringUtil;
 
